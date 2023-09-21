@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>login</title>
+</head>
+<body>
+    <main>
+        <h1>Registro de usuario</h1>
+        <h2>Ingresa tus datos</h2>
+        <form action="next_form.php" method="post">
+            <label for="nombre">nombre de usuario</label>
+            <input type="text" name="nombre" placeholder="ej. Juan Perez" id="nombre" class="field_text">
+            <div id="genero_container">
+                <h4>sexo:</h4>
+                <div id="genero_hombre">
+                    <label for="radio_hombre">hombre</label>
+                    <input type="radio" name="genero" id="radio_hombre">
+                </div>
+                <div id="genero_mujer">
+                    <label for="radio_mujer">mujer</label>
+                    <input type="radio" name="genero" id="radio_mujer">
+                </div>
+            </div>
+            <label for="email">correo electrónico</label>
+            <input type="email" name="email" id="email" placeholder="ej. abc@gmail.com" class="field_text">
+
+            <hr>
+            <input type="submit">
+
+        </form>
+    </main>
+</body>
+</html>

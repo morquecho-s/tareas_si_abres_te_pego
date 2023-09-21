@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+        
+    <title>home page</title>
+    <style>
+        body{
+            background-image: url("fondo.png");
+            background-size: 90%;
+            background-color: #979AD3;
+            background-repeat: no-repeat;
+        }
+        *{
+            font-family: 'Rubik', sans-serif;
+            user-select: none;
+        }
+        p{
+            position: absolute;
+            right: 8%;
+            bottom: 8%;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #000000a3;
+        }
+        a{
+            position: absolute;
+            top: 20%;
+            left: 40%;
+            font-size: 2rem;
+            background-color: #FFCA00;
+            padding: 1%;
+            text-align: center;
+            width: 300px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+            color: #000000a3;
+            font-weight: bold;
+            border: 5px solid #00000033;
+        }
+        a:hover{
+            background-color: transparent;
+        }
+        a:active{
+            transition: 0s;
+            background-color: rgb(161, 228, 255);
+        }
+        a::before{
+            content: "";
+            position: absolute;
+            left: 45%;
+            top: calc(100% + 5px);
+            z-index: 0;
+            width: 5%;
+            height: 200px;
+            background-color:#73472B;
+        }
+        a::after{
+            content: '';
+            position:absolute;
+            top: calc(calc(100% + 5px) + 200px);
+            height: 20px;
+            width: 100px;
+            left: calc(45% - 40px);
+            background-color: #4d2c17;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <a href="index.html">logout</a>
+        <p>Estamos trabajando en el sito.
+            <br>
+            Puedes vuelve en un momento...
+        </p>
+        
+    </main>
+</body>
+</html>
