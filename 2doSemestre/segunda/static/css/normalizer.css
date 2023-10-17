@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #141414b6;
+    font-weight: bold;
+}
+*::selection{
+    background-color: #CD5C08;
+    color: #edf5fd;
+    padding: 10px;
+}

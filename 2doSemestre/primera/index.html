@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro materia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Morquecho Soto Sergio Manuel</h1>
+        <form action="insert_data.php" method="post">
+            <label for="matricula_field">matricula</label>
+            <div id="matricula_container">
+                <input type="number" name="matricula" placeholder="ej. 212080111" id="matricula_field" class="input_fields" min="0">
+                <input type="button" value="G" id="button_matricula">
+            </div>
+            <label for="materia_field">materia</label>
+            <input type="text" name="materia" id="materia_field" class="input_fields" placeholder="ej. Matemáticas">
+            <hr>
+            <div id="buttons_container">
+                <input type="submit" value="registrar">
+                <input type="button" value="limpiar" id="button_limpiar">
+            </div>
+            
+        </form>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
